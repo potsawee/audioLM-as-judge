@@ -13,11 +13,18 @@ prompt_text_1 = """You are an expert in audio quality assessment specializing in
 2.	Naturalness: The degree to which the speech resembles a natural human voice, including accurate intonation, rhythm, and expressiveness.
 3.	Overall Quality: The overall impression of the audio's naturalness and coherence, considering how pleasant and lifelike it sounds.
 
-Begin your evaluation by providing a short explanation. Be as objective as possible. After providing your explanation, please give your verdict following this format <verdict> [[A/B]] </verdict>.
+Follow this step-by-step process for your evaluation:
 
-The text for the two audio for you to evaluate is: "###TEXT###"
+1.	Listen Carefully: Begin by carefully listening to both Audio A (the first audio) and Audio B (the second audio). Take note of any differences in clarity, fidelity, and overall quality.
+2.	Analyze Each Criterion: For each criterion (clarity, naturalness, and overall quality), evaluate how well each audio file performs and provide a brief explanation of your reasoning.
+3.	Compare Thoroughly: Summarize the strengths and weaknesses of each audio file based on your analysis.
+4.	Decide the Winner: Conclude by determining which audio file is better overall and clearly state your final verdict in this format: [[A]] or [[B]].
+
+Important: Provide a brief summary of your reasoning to justify your decision. Your analysis should be thorough and objective to ensure fairness in the comparison. Your response must start with <explanation> explanation </explanation> and end with <verdict> [[A/B]] </verdict>.
 
 The two audio for you to evaluate are the following."""
+
+# The text for the two audio for you to evaluate is: "###TEXT###"
 
 def ab_audio_to_message(
     encoded_audio_a, 
@@ -101,12 +108,14 @@ def experiment(
 
     for i in tqdm(range(num_done, len(data))):
         audio_a, audio_b = data[i]
-        assert audio_a["text"] == audio_b["text"]
-        text = audio_a["text"]
+        # assert audio_a["text"] == audio_b["text"]
+        # text = audio_a["text"]
         encoded_audio_a = get_encoded_audio_from_path(audio_a["path"])
         encoded_audio_b = get_encoded_audio_from_path(audio_b["path"])
 
-        prompt_text = prompt_text_1.replace("###TEXT###", text)
+        # prompt_text = prompt_text_1.replace("###TEXT###", text)
+        prompt_text = prompt_text_1
+        
         if order == 'ab':
             response = ab_testing(encoded_audio_a, encoded_audio_b, prompt_text, message_format=1)
         elif order == 'ba':
