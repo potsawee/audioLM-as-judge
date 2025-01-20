@@ -152,10 +152,10 @@ def experiment(
 
     with open(data_path) as f:
         data = json.load(f)
-    # data = data[:500]
-    # print("----------------------------------------------------------")
-    # print("Warning: Only using the first 500 data points for testing.")
-    # print("----------------------------------------------------------")
+    data = data[:1600]
+    print("----------------------------------------------------------")
+    print("Warning: Only using the first 1500 data points for testing.")
+    print("----------------------------------------------------------")
     print("len(data):", len(data))
 
     outputs = []
