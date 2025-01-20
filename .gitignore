@@ -1,0 +1,45 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Logs and caches
+*.log
+*.out
+*.err
+*.tmp
+*.temp
+.cache/
+*.coverage
+pytest_cache/
+
+# ML artifacts
+*.h5
+*.ckpt
+*.pth
+*.pt
+*.onnx
+*.joblib
+*.pkl
+*.npy
+*.npz
+
+# Dataset files
+*.csv
+*.tsv
+*.parquet
+*.json
+*.xlsx
+
+# OS-specific files
+.DS_Store
+Thumbs.db

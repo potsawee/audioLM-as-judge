@@ -4,6 +4,7 @@ import os
 import pdb
 from datasets import load_dataset
 import soundfile as sf
+from pydub import AudioSegment
 from openai import OpenAI
 
 # Initialize OpenAI client with API key
@@ -23,6 +24,25 @@ def get_encoded_audio_from_path(filepath):
     """
     with open(filepath, "rb") as audio_file:
         return base64.b64encode(audio_file.read()).decode("utf-8")
+
+def encode_audio_with_resampling(filepath, target_sample_rate=16000):
+    try:
+        # Load the audio file
+        audio = AudioSegment.from_file(filepath)
+        
+        # Check the current sample rate
+        if audio.frame_rate != target_sample_rate:
+            print(f"Resampling from {audio.frame_rate} Hz to {target_sample_rate} Hz")
+            audio = audio.set_frame_rate(target_sample_rate)
+        
+        # Export the audio to a temporary file or bytes
+        audio_bytes = audio.export(format="wav").read()
+        
+        # Encode as Base64
+        return base64.b64encode(audio_bytes).decode("utf-8")
+    except Exception as e:
+        print(f"Error processing audio: {e}")
+        return None
 
 def get_encoded_audio_from_array(audio_array, sample_rate):
     """
