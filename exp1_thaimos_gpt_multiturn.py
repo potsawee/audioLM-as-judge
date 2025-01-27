@@ -152,10 +152,10 @@ def experiment(
 
     with open(data_path) as f:
         data = json.load(f)
-    data = data[:1600]
-    print("----------------------------------------------------------")
-    print("Warning: Only using the first 1500 data points for testing.")
-    print("----------------------------------------------------------")
+    # data = data[:1600]
+    # print("----------------------------------------------------------")
+    # print("Warning: Only using the first 1500 data points for testing.")
+    # print("----------------------------------------------------------")
     print("len(data):", len(data))
 
     outputs = []
@@ -214,8 +214,8 @@ def main():
     parser.add_argument("--criterion", type=str, default='sound', help="Criterion")
     args = parser.parse_args()
     experiment(args.data_path, args.output_path, args.order, args.criterion)
-    # python exp1_thaimos_multiturn.py --data_path data/data_thaimos_pairwise_diffall.json --output_path experiments/thaimos/ab_testing/shuffled_prompt2_sound.jsonl --order ab --criterion sound
-    # python exp1_thaimos_multiturn.py --data_path data/data_thaimos_pairwise_diffall.json --output_path experiments/thaimos/ab_testing/shuffled_prompt2_rhythm.jsonl --order ab --criterion rhythm
-    # python exp1_thaimos_multiturn.py --data_path data/data_thaimos_pairwise_diffall.json --output_path experiments/thaimos/ab_testing/shuffled_prompt2_pronunciation.jsonl --order ab --criterion pronunication
+    # python exp1_thaimos_gpt_multiturn.py --data_path data/data_thaimos_pairwise_diffall.json --output_path experiments/thaimos/ab_testing/shuffled_prompt2_sound.jsonl --order ab --criterion sound
+    # python exp1_thaimos_gpt_multiturn.py --data_path data/data_thaimos_pairwise_diffall.json --output_path experiments/thaimos/ab_testing/shuffled_prompt2_rhythm.jsonl --order ab --criterion rhythm
+    # python exp1_thaimos_gpt_multiturn.py --data_path data/data_thaimos_pairwise_diffall.json --output_path experiments/thaimos/ab_testing/shuffled_prompt2_pronunciation.jsonl --order ab --criterion pronunciation
 if __name__ == "__main__":
     main()
