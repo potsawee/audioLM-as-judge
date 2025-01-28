@@ -21,9 +21,9 @@ Follow this step-by-step process for your evaluation:
 
 Important: Provide a brief summary of your reasoning to justify your decision. Your analysis should be thorough and objective to ensure fairness in the comparison. Your response must start with <explanation> explanation </explanation> and end with <verdict> [[A/B]] </verdict>.
 
-The two audio snippets to be compared will be provided in the following two user turns."""
+The text for the two audio for you to evaluate is: "###TEXT###"
 
-# The text for the two audio for you to evaluate is: "###TEXT###"
+The two audio snippets to be compared will be provided in the following two user turns."""
 
 def ab_audio_to_conversation(
     audio_a_path, 
@@ -165,7 +165,7 @@ def experiment(
         # else:
             # raise ValueError(f"Invalid message_format: {message_format}")
 
-        # prompt_text = prompt_text.replace("###TEXT###", text)
+        prompt_text = prompt_text.replace("###TEXT###", text)
 
         if order == 'ab':
             conversation = ab_audio_to_conversation(
@@ -205,7 +205,8 @@ def main():
     parser.add_argument("--message_format", type=int, default=1, help="Message format")
     args = parser.parse_args()
     experiment(args.data_path, args.output_path, args.order, args.message_format)
-    # python exp1_qwen2_somos_multiturn.py --data_path data/data_somos_pairwise_diffall.json --output_path experiments/somos/ab_testing/diffall_qwen2_prompt2.txt --order ab --message_format 2
-    # python exp1_qwen2_somos_multiturn.py --data_path data/data_somos_pairwise_diffall.json --output_path experiments/somos/ab_testing/diffall_qwen2_prompt2_format1.txt --order ab --message_format 1
+    # python exp1_somos_qwen2_multiturn.py --data_path data/data_somos_pairwise_diffall.json --output_path experiments/somos/ab_testing/diffall_qwen2_prompt2.txt --order ab --message_format 2
+    # python exp1_somos_qwen2_multiturn.py --data_path data/data_somos_pairwise_diffall.json --output_path experiments/somos/ab_testing/diffall_qwen2_prompt2_format1.txt --order ab --message_format 1
+    # python exp1_somos_qwen2_multiturn.py --data_path data/data_somos_pairwise_diffall.json --output_path experiments/somos/ab_testing/diffall_qwen2_prompt2_format1_BA.txt --order ba --message_format 1
 if __name__ == "__main__":
     main()

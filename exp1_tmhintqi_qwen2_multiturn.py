@@ -205,6 +205,7 @@ def main():
 
     # TMHINTQI & Qwen2
     # python exp1_tmhintqi_qwen2_multiturn.py --data_path data/data_tmhintqi_pairwise_diffall.json --output_path experiments/tmhintqi/ab_testing/shuffled_qwen2_prompt1.txt --order ab --message_format 1
+    # python exp1_tmhintqi_qwen2_multiturn.py --data_path data/data_tmhintqi_pairwise_diffall.json --output_path experiments/tmhintqi/ab_testing/shuffled_qwen2_prompt1_BA.txt --order ba --message_format 1
 
 if __name__ == "__main__":
     main()

@@ -25,6 +25,8 @@ def analyze_comparison(text):
     - B: 'B is better than A'
     - C: 'A and B are equally good'
 
+    Note that A might also be reffered to as Audio A or first option, and B might also be reffered to as Audio B or second option.
+
     Text: "{text}"
 
     You must strictly output only one letter, i.e., A, B, or C following the guideline above. Do not include any additional information.

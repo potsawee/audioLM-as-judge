@@ -46,3 +46,6 @@ Thumbs.db
 
 # data
 data/
+
+# tmp
+tmp/
