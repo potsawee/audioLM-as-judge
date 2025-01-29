@@ -49,3 +49,9 @@ data/
 
 # tmp
 tmp/
+
+# chatbot arena
+chatbot-arena/kokoroTTS/misaki
+chatbot-arena/kokoroTTS/*json
+chatbot-arena/kokoroTTS/wav/*
+chatbot-arena/kokoroTTS/ja_words.txt
