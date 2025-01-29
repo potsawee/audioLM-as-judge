@@ -19,6 +19,25 @@ def synthesize_speech(
         print(f"Already exists: {wav_path}")
         return
 
+    # If text is empty, generate silence of 2 seconds (adjust as needed)
+    if not text.strip():
+        silence_duration = 3.0  # in seconds
+        sr_24k = 24000
+        
+        # Generate silence at 24k
+        silence_audio_24k = np.zeros(int(sr_24k * silence_duration), dtype=np.float32)
+
+        # Resample to 16k
+        combined_audio_16k = librosa.resample(
+            y=silence_audio_24k,
+            orig_sr=sr_24k,
+            target_sr=16000
+        )
+        # Save the silent audio
+        sf.write(wav_path, combined_audio_16k, 16000)
+        print(f"No text given. Saved {silence_duration}s of silence to {wav_path}")
+        return
+
     # Generate audio in chunks, but do not write them individually
     generator = pipeline(
         text, 
@@ -38,8 +57,11 @@ def synthesize_speech(
         audio_chunks.append(audio)
 
     # Combine all chunks into one NumPy array (at the original 24 kHz sample rate)
-    combined_audio_24k = np.concatenate(audio_chunks)
-
+    if len(audio_chunks) > 1:
+        combined_audio_24k = np.concatenate(audio_chunks)
+    else:
+        combined_audio_24k = audio_chunks[0]
+            
     # ----- RESAMPLE from 24 kHz to 16 kHz -----
     # Librosa's resampling
     combined_audio_16k = librosa.resample(
