@@ -8,6 +8,15 @@ import soundfile as sf
 import librosa
 from kokoro import KPipeline
 
+def get_silence_audio(duration: float, sr: int):
+    # silence_duration = 3.0  # in seconds
+    # sr_16k = 16000
+    
+    # Generate silence at sr
+    silence_audio = np.zeros(int(sr * duration), dtype=np.float32)
+
+    return silence_audio
+
 def synthesize_speech(
     pipeline,
     text: str,
@@ -21,21 +30,12 @@ def synthesize_speech(
 
     # If text is empty, generate silence of 2 seconds (adjust as needed)
     if not text.strip():
-        silence_duration = 3.0  # in seconds
-        sr_24k = 24000
-        
-        # Generate silence at 24k
-        silence_audio_24k = np.zeros(int(sr_24k * silence_duration), dtype=np.float32)
+        silent_duration = 2.0
+        combined_audio_16k = get_silence_audio(silent_duration, 16000)
 
-        # Resample to 16k
-        combined_audio_16k = librosa.resample(
-            y=silence_audio_24k,
-            orig_sr=sr_24k,
-            target_sr=16000
-        )
         # Save the silent audio
         sf.write(wav_path, combined_audio_16k, 16000)
-        print(f"No text given. Saved {silence_duration}s of silence to {wav_path}")
+        print(f"No text given. Saved {silent_duration}s of silence to {wav_path}")
         return
 
     # Generate audio in chunks, but do not write them individually
@@ -48,27 +48,31 @@ def synthesize_speech(
 
     # Collect chunks of audio in a list
     audio_chunks = []
-    for i, (gs, ps, audio) in enumerate(generator):
-        # print(i)
-        # print(gs)
-        # print(ps)
+    try:
+        for i, (gs, ps, audio) in enumerate(generator):
+            # print(i)
+            # print(gs)
+            # print(ps)
 
-        # Append this chunk to our collection
-        audio_chunks.append(audio)
+            # Append this chunk to our collection
+            audio_chunks.append(audio)
 
-    # Combine all chunks into one NumPy array (at the original 24 kHz sample rate)
-    if len(audio_chunks) > 1:
-        combined_audio_24k = np.concatenate(audio_chunks)
-    else:
-        combined_audio_24k = audio_chunks[0]
-            
-    # ----- RESAMPLE from 24 kHz to 16 kHz -----
-    # Librosa's resampling
-    combined_audio_16k = librosa.resample(
-        y=combined_audio_24k,
-        orig_sr=24000,
-        target_sr=16000
-    )
+        # Combine all chunks into one NumPy array (at the original 24 kHz sample rate)
+        if len(audio_chunks) > 1:
+            combined_audio_24k = np.concatenate(audio_chunks)
+        else:
+            combined_audio_24k = audio_chunks[0]
+                
+        # ----- RESAMPLE from 24 kHz to 16 kHz -----
+        # Librosa's resampling
+        combined_audio_16k = librosa.resample(
+            y=combined_audio_24k,
+            orig_sr=24000,
+            target_sr=16000
+        )
+    except OverflowError as e:
+        print(f"OverflowError: {e}")
+        combined_audio_16k = get_silence_audio(2.0, 16000)
 
     # Save the 16 kHz version to a single file
     sf.write(wav_path, combined_audio_16k, 16000)
