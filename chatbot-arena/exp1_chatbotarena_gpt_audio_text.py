@@ -111,7 +111,8 @@ def main():
     args = parser.parse_args()
     experiment(args.data_path, args.output_path, args.order)
     # usage: python exp1_chatbotarena_gpt_audio_text.py --data_path chatbot-arena-spoken-1turn-english-difference-voices.json --output_path experiments/chatbot-arena-7824/audio-text-gpt4o.jsonl --order ab
-    main()
+
+    # usage: python exp1_chatbotarena_gpt_audio_text.py --data_path chatbot-arena-spoken-1turn-english-difference-voices.json --output_path experiments/chatbot-arena-7824/audio-text-gpt4o_BA.jsonl --order ba
 
 if __name__ == "__main__":
     main()

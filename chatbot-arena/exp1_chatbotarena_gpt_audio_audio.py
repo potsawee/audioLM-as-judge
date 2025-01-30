@@ -35,26 +35,24 @@ def experiment(
         num_done = 0
     print("num_done = {}".format(num_done))
 
-    for i in tqdm(range(num_done, len(data))):
-        if order == 'ab':
-            conversation_a, conversation_b = data[i]['conversation_a'], data[i]['conversation_b']
-        elif order == 'ba':
-            conversation_a, conversation_b = data[i]['conversation_b'], data[i]['conversation_a']
-        else:
-            raise ValueError("order must be 'ab' or 'ba'")
-        assert conversation_a[0]['content'] == conversation_b[0]['content']
-    
+    for i in tqdm(range(num_done, len(data))):    
         # question
         question_wav_path = f"/data/workspace/ppotsawee/audioLM-as-judge/chatbot-arena/kokoroTTS/wav/{data[i]['question_id']}-user.wav"
         encoded_audio_question = get_encoded_audio_from_path(question_wav_path)
 
         # assistant a
         assistant_a_wav_path = f"/data/workspace/ppotsawee/audioLM-as-judge/chatbot-arena/kokoroTTS/wav/{data[i]['question_id']}-assistant-a.wav"
-        encoded_audio_responseA = get_encoded_audio_from_path(assistant_a_wav_path)
-
         # assistant b
         assistant_b_wav_path = f"/data/workspace/ppotsawee/audioLM-as-judge/chatbot-arena/kokoroTTS/wav/{data[i]['question_id']}-assistant-b.wav"
-        encoded_audio_responseB = get_encoded_audio_from_path(assistant_b_wav_path)
+
+        if order == 'ab':
+            encoded_audio_responseA = get_encoded_audio_from_path(assistant_a_wav_path)
+            encoded_audio_responseB = get_encoded_audio_from_path(assistant_b_wav_path)
+        elif order == 'ba':
+            encoded_audio_responseA = get_encoded_audio_from_path(assistant_b_wav_path)
+            encoded_audio_responseB = get_encoded_audio_from_path(assistant_a_wav_path)
+        else:
+            raise ValueError("order must be 'ab' or 'ba'")
 
         message = [
             {
@@ -140,7 +138,9 @@ def main():
     args = parser.parse_args()
     experiment(args.data_path, args.output_path, args.order)
     # usage: python exp1_chatbotarena_gpt_audio_audio.py --data_path chatbot-arena-spoken-1turn-english-difference-voices.json --output_path experiments/chatbot-arena-7824/audio-audio-gpt4o.jsonl --order ab
-    main()
+
+    # usage: python exp1_chatbotarena_gpt_audio_audio.py --data_path chatbot-arena-spoken-1turn-english-difference-voices.json --output_path experiments/chatbot-arena-7824/audio-audio-gpt4o_BA.jsonl --order ba
+
 
 if __name__ == "__main__":
     main()
