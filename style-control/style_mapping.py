@@ -67,7 +67,7 @@ def main(
     output_path: str, # jsonl
     start_id: int = 0,
     end_id: int = 200,
-    num_try: int = 3,
+    num_try: int = 5,
 ):
     output_path_with_id = os.path.join(output_path, f"{start_id}-{end_id}.json")
     if os.path.exists(output_path_with_id):
@@ -113,6 +113,9 @@ def main(
             response_json = json.loads(response)
         except json.JSONDecodeError:
             print("Error in JSON decoding, trying again...")
+            if j == num_try - 1:
+                print("Failed to decode JSON, skipping...")
+                raise Exception("Failed to decode JSON")
             continue
     print("Wrote output path:", output_path_with_id)
     with open(output_path_with_id, "w") as f:
