@@ -57,14 +57,33 @@ def encode_audio_array_with_resampling(audio_array: np.ndarray,
         return None
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+# Version 1
+# system_prompt = """Please act as an impartial judge and evaluate the quality of the responses provided by two AI assistants to the user question displayed below. You should choose the assistant that follows the user's instructions and answers the user's question better. Your evaluation should consider two main criteria:
 
-system_prompt = """Please act as an impartial judge and evaluate the quality of the responses provided by two AI assistants to the user question displayed below. You should choose the assistant that follows the user's instructions and answers the user's question better. Your evaluation should consider two main criteria:
+# 1. Content Aspect: Evaluate the responses based on how well they address the user's question and follow the user's instructions. Consider factors such as the relevance, accuracy, and helpfulness of the responses. The aspect does not include the quality of the audio, the voice, the accent, or the speaking style of the assistants.
+
+# 2. Style Aspect: Evaluate the responses based on the style and tone of the assistants on how well it aligns with the user instruction. 
+
+# Please compare the two responses on each criterion separately and provide a final overall verdict based on your evaluation. Begin your evaluation by comparing the two responses and provide a short explanation. Avoid any position biases and ensure that the order in which the responses were presented does not influence your decision. Do not allow the length of the responses to influence your evaluation. Do not favor certain names of the assistants. Be as objective as possible. After providing your explanation, output your final verdict by strictly following this format: "A" if assistant A is better, "B" if assistant B is better, and "C" for a tie (which can be equally good and equally bad). Note that the user question and the responses of the assistants will be provided to you in the audio format. You should evaluate the responses based on the user question and not on the responses of the other assistant.
+
+# After providing your explanation, please provide your final verdict in a JSON format as follows:
+
+# [Verdict]
+# {
+#     "content": "...",
+#     "style": "...",
+#     "overall": "..."
+# }"""
+# Version 2
+system_prompt = """Please act as an impartial judge and evaluate the quality of the responses provided by two AI assistants to the user question. You should choose the assistant that follows the user's instructions and answers the user's question better. Your evaluate the responses by considering two main criteria:
 
 1. Content Aspect: Evaluate the responses based on how well they address the user's question and follow the user's instructions. Consider factors such as the relevance, accuracy, and helpfulness of the responses. The aspect does not include the quality of the audio, the voice, the accent, or the speaking style of the assistants.
 
 2. Style Aspect: Evaluate the responses based on the style and tone of the assistants on how well it aligns with the user instruction. 
 
-Please compare the two responses on each criterion separately and provide a final overall verdict based on your evaluation. Begin your evaluation by comparing the two responses and provide a short explanation. Avoid any position biases and ensure that the order in which the responses were presented does not influence your decision. Do not allow the length of the responses to influence your evaluation. Do not favor certain names of the assistants. Be as objective as possible. After providing your explanation, output your final verdict by strictly following this format: "A" if assistant A is better, "B" if assistant B is better, and "C" for a tie (which can be equally good and equally bad). Note that the user question and the responses of the assistants will be provided to you in the audio format. You should evaluate the responses based on the user question and not on the responses of the other assistant.
+Please compare the two responses on each criterion separately and provide a final overall verdict based on your evaluation. Begin your evaluation by comparing the two responses and provide a short explanation. Avoid any position biases and ensure that the order in which the responses were presented does not influence your decision. Do not allow the length of the responses to influence your evaluation. Do not favor certain names of the assistants. Be as objective as possible. After providing your explanation, output your final verdict by strictly following this format: "A" if assistant A is better, "B" if assistant B is better, and "C" for a tie (which can be equally good and equally bad). Note that for the Content aspect, the responses could be of the same quality (i.e., "C" is an option), but the Style aspect is always different (i.e., only predict "A" or "B" for the style aspect).
+
+Note that the user question and the responses of the assistants will be provided to you in the audio format. You should evaluate the responses based on the user question and not on the responses of the other assistant.
 
 After providing your explanation, please provide your final verdict in a JSON format as follows:
 
@@ -74,7 +93,6 @@ After providing your explanation, please provide your final verdict in a JSON fo
     "style": "...",
     "overall": "..."
 }"""
-
 
 def experiment(
     output_path,
@@ -195,6 +213,8 @@ def main():
     parser.add_argument("--output_path", type=str, required=True, help="Output Path")
     args = parser.parse_args()
     experiment(args.output_path)
+
+    # usage: python exp1_chatbotarenastyle_gpt_audio_audio.py --output_path experiments/chatbot-arena-style-654/exp1_audio_audio_gpt4o.v2.jsonl
 
 
 if __name__ == "__main__":
