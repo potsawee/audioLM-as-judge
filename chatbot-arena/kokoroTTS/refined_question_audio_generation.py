@@ -108,12 +108,14 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Analyze comparison between A and B from input text.")
     parser.add_argument("--input_dir", 
         type=str, 
-        default="/data/workspace/ppotsawee/audioLM-as-judge/style-control/refined_questions/",
+        # default="/data/workspace/ppotsawee/audioLM-as-judge/style-control/refined_questions/",
+        default="/data/workspace/ppotsawee/audioLM-as-judge/elevenLabs/refined_questions/",
         help="Path to the input dir containing files to process."
     )
     parser.add_argument("--wav_dir", 
         type=str, 
-        default="/data/workspace/ppotsawee/audioLM-as-judge/style-control/refined_questions_kokoro_wav/",
+        # default="/data/workspace/ppotsawee/audioLM-as-judge/style-control/refined_questions_kokoro_wav/",
+        default="/data/workspace/ppotsawee/audioLM-as-judge/elevenLabs/refined_questions_kokoro_wav/",
         help="Path to the output file to save the synthesis results."
     )
     args = parser.parse_args()

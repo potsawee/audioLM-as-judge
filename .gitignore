@@ -64,3 +64,10 @@ style-control/gpt*.wav
 style-control/batch1_generated_gpt_audio/
 style-control/refined_questions/
 style-control/refined_questions_kokoro_wav/
+
+# elevenLabs
+elevenLabs/generated_11labs_audio/
+elevenLabs/generated_kokoro_audio/
+elevenLabs/refined_questions/
+elevenLabs/refined_questions_kokoro_wav/
+elevenLabs/data-chatbot-arena-spoken-style-11labs/
