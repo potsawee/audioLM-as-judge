@@ -72,3 +72,7 @@ elevenLabs/generated_kokoro_audio/
 elevenLabs/refined_questions/
 elevenLabs/refined_questions_kokoro_wav/
 elevenLabs/data-chatbot-arena-spoken-style-11labs/
+
+# leaderboard (alpaca-eval like)
+eval-leaderboard/experiments/
+eval-leaderboard/judge_outputs/
