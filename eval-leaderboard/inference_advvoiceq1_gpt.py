@@ -2,14 +2,14 @@ import os
 import argparse
 import base64
 import random
+import json
 from tqdm import tqdm
 from openai import OpenAI
-from datasets import load_dataset
-from gpt4o_audio_api import encode_audio_array_with_resampling
+from gpt4o_audio_api import encode_audio_with_resampling
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
-system_prompt = """You are a helpful assistant. You provide answers to user questions. The question will be in the audio format. Please listen to the question and provide an appropriate response. If users request you to speak in a specific style or tone, please behave accordingly."""
+system_prompt = """You are a helpful assistant. You provide answers to user instructions. The instructions will be in the audio format. Please listen to the instruction and provide an appropriate response. If users request you to speak in a specific style or tone, please behave accordingly."""
 
 def experiment(
     output_dir,
@@ -19,26 +19,26 @@ def experiment(
     print("-----------------------------")
 
     # load dataset
-    dataset = load_dataset("potsawee/chatbot-arena-spoken-style-eval-570")["train"]
-    print("len(dataset):", len(dataset))
+    with open("../advanced-voice-gen-task-v1/questions1_shuffled_id.json", "r") as f:
+        tmp_dataset = json.load(f)
+    print("len(dataset):", len(tmp_dataset))
 
-    ids = [i for i in range(len(dataset))]
-    # random.shuffle(ids)
+    ids = [i for i in range(len(tmp_dataset))]
+    random.shuffle(ids)
 
-    for i in tqdm(ids):
-        x = dataset[i]
-        conversation_id = x["id"]
+    for id in tqdm(ids):
 
-        txt_file = f"{output_dir}/transcript/{conversation_id}.txt"
-        wav_file = f"{output_dir}/audio/{conversation_id}.wav"
+        txt_file = f"{output_dir}/transcript/{id}.txt"
+        wav_file = f"{output_dir}/audio/{id}.wav"
         # check if the transcript file already exists
         if os.path.exists(txt_file) and os.path.exists(wav_file):
-            print(f"Skipping {conversation_id}")
+            print(f"Skipping {id}")
             continue
 
-        question = x['question_refined_wav']
-        encoded_audio_question = encode_audio_array_with_resampling(
-            question['array'], original_sr=question['sampling_rate'], target_sample_rate=16000)
+        # question = x['question']
+        question_wav_path = f"../advanced-voice-gen-task-v1/questions1_kokoro_wav/{id}.kokoro.wav"
+        assert os.path.exists(question_wav_path)
+        encoded_audio_question = encode_audio_with_resampling(question_wav_path, target_sample_rate=16000)
         
         message = [
             {
@@ -74,7 +74,7 @@ def experiment(
             messages=message
         )
 
-        # response = completion.choices[0].message.content ---> this one is empty for audio out      
+        # response = completion.choices[0].message.content ---> this one is empty for audio out   
         
         # save transcript
         transcript = completion.choices[0].message.audio.transcript
@@ -94,7 +94,7 @@ def main():
     args = parser.parse_args()
     experiment(args.output_dir)
 
-    # usage: python inference_eval570_gpt.py --output_dir experiments/chatbot-arena-spoken-style-eval-570/gpt4o
+    # usage: python inference_advvoiceq1_gpt.py --output_dir experiments/advvoiceq1/gpt4o
 
 if __name__ == "__main__":
     main()
