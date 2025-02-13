@@ -76,3 +76,6 @@ elevenLabs/data-chatbot-arena-spoken-style-11labs/
 # leaderboard (alpaca-eval like)
 eval-leaderboard/experiments/
 eval-leaderboard/judge_outputs/
+eval-leaderboard/judge_outputs_v0/
+eval-leaderboard/*.wav
+eval-leaderboard/misaki
