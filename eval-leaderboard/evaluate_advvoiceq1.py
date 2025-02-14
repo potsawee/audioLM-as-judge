@@ -238,7 +238,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--model_output_dir", type=str, required=True)
     parser.add_argument("--judge_output_dir", type=str, required=True)
-    parser.add_argument("--randomize", type=bool, default=False)
+    parser.add_argument("--randomize", type=str, default=False)
     args = parser.parse_args()
 
     if args.randomize == "True":
@@ -255,6 +255,21 @@ def main():
 
     # usage: python evaluate_advvoiceq1.py --model_output_dir experiments/advvoiceq1/typhoon2/transcript_kokoro_wav/ --judge_output_dir judge_outputs/advvoiceq1_judge_gpt4o_candidate_typ2kokoro --randomize False
 
+    # usage: python evaluate_advvoiceq1.py --model_output_dir experiments/advvoiceq1/gemini2flash-exp/audio --judge_output_dir judge_outputs/advvoiceq1_judge_gpt4o_candidate_gemini2flashaudio --randomize False
+
+    # usage: python evaluate_advvoiceq1.py --model_output_dir experiments/advvoiceq1/gemini2flash-api/text_kokoro_tts --judge_output_dir judge_outputs/advvoiceq1_judge_gpt4o_candidate_gemini2flashapikokoro --randomize False
+
+    # usage: python evaluate_advvoiceq1.py --model_output_dir experiments/advvoiceq1/gemini15flash-api/text_kokoro_tts --judge_output_dir judge_outputs/advvoiceq1_judge_gpt4o_candidate_gemini15flashapikokoro --randomize False
+
+    # usage: python evaluate_advvoiceq1.py --model_output_dir experiments/advvoiceq1/gemini2flash-exp/audio_transcript_kokoro --judge_output_dir judge_outputs/advvoiceq1_judge_gpt4o_candidate_gemini2flashtranscriptkokoro  --randomize False
+
+    # usage: python evaluate_advvoiceq1.py --model_output_dir /data/workspace/ppotsawee/LLaMA-Omni/omni_speech/infer/examples/speakbenchv0_answer_wav --judge_output_dir judge_outputs/advvoiceq1_judge_gpt4o_candidate_llamaomni  --randomize False
+
+    # usage: python evaluate_advvoiceq1.py --model_output_dir experiments/advvoiceq1/qwen2/text_kokoro --judge_output_dir judge_outputs/advvoiceq1_judge_gpt4o_candidate_qwen2kokoro  --randomize False
+
+    # usage: python evaluate_advvoiceq1.py --model_output_dir experiments/advvoiceq1/diva/text_kokoro --judge_output_dir judge_outputs/advvoiceq1_judge_gpt4o_candidate_divakokoro  --randomize False
+
+    
 
 if __name__ == "__main__":
     main()

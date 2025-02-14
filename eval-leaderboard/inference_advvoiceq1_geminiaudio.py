@@ -110,7 +110,7 @@ def main():
     args = parser.parse_args()
     experiment(args.output_dir)
 
-    # usage: python inference_advvoiceq1_gemini.py --output_dir experiments/advvoiceq1/gemini2flash
+    # usage: python inference_advvoiceq1_geminiaudio.py --output_dir experiments/advvoiceq1/gemini2flash
 
 if __name__ == "__main__":
     main()
