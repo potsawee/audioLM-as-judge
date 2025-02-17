@@ -268,8 +268,6 @@ def main():
     # usage: python evaluate_advvoiceq1.py --model_output_dir experiments/advvoiceq1/qwen2/text_kokoro --judge_output_dir judge_outputs/advvoiceq1_judge_gpt4o_candidate_qwen2kokoro  --randomize False
 
     # usage: python evaluate_advvoiceq1.py --model_output_dir experiments/advvoiceq1/diva/text_kokoro --judge_output_dir judge_outputs/advvoiceq1_judge_gpt4o_candidate_divakokoro  --randomize False
-
     
-
 if __name__ == "__main__":
     main()

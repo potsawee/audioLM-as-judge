@@ -318,6 +318,8 @@ def experiment(
             print("i:", i)
             print("conversation_id:", conversation_id)
             print("error:", e)
+    print("Finished [model_output]:", model_output_dir)
+    print("Finished [judge_output]:", judge_output_dir)
 
 def main():
     parser = argparse.ArgumentParser()
@@ -338,8 +340,27 @@ def main():
 
     # usage: python evaluate_advvoiceq1_v2.py --model_output_dir experiments/advvoiceq1/gemini15flash-api/text_kokoro_tts/  --judge_output_dir judge_outputs/advvoiceq1_v2/judge_gpt4o_prompt1.1_candidate_gemini15flashapikokoro --randomize False
 
+    # usage: python evaluate_advvoiceq1_v2.py --model_output_dir experiments/advvoiceq1/gpt4o/audio/ --judge_output_dir judge_outputs/advvoiceq1_v2/judge_gpt4o_prompt1.1_candidate_gpt4o --randomize False
 
+    # usage: python evaluate_advvoiceq1_v2.py --model_output_dir experiments/advvoiceq1/gemini2flash-exp/audio --judge_output_dir judge_outputs/advvoiceq1_v2/judge_gpt4o_prompt1.1_candidate_gemini2flashaudio --randomize False
     
+    # usage: python evaluate_advvoiceq1_v2.py --model_output_dir experiments/advvoiceq1/gemini2flash-exp/audio_transcript_kokoro --judge_output_dir judge_outputs/advvoiceq1_v2/judge_gpt4o_prompt1.1_candidate_gemini2flashtranscriptkokoro  --randomize False
+
+    # usage: python evaluate_advvoiceq1_v2.py --model_output_dir /data/workspace/ppotsawee/LLaMA-Omni/omni_speech/infer/examples/speakbenchv0_answer_wav --judge_output_dir judge_outputs/advvoiceq1_v2/judge_gpt4o_prompt1.1_candidate_llamaomni  --randomize False
+
+    # usage: python evaluate_advvoiceq1_v2.py --model_output_dir experiments/advvoiceq1/typhoon2/audio/ --judge_output_dir judge_outputs/advvoiceq1_v2/judge_gpt4o_prompt1.1_candidate_typhoon2 --randomize False
+
+    # usage: python evaluate_advvoiceq1_v2.py --model_output_dir experiments/advvoiceq1/gemini2flash-api/text_kokoro_tts --judge_output_dir judge_outputs/advvoiceq1_v2/judge_gpt4o_prompt1.1_candidate_gemini2flashapikokoro --randomize False
+
+    # usage: python evaluate_advvoiceq1_v2.py --model_output_dir experiments/advvoiceq1/diva/text_kokoro --judge_output_dir judge_outputs/advvoiceq1_v2/judge_gpt4o_prompt1.1_candidate_divakokoro  --randomize False
+
+    # usage: python evaluate_advvoiceq1_v2.py --model_output_dir experiments/advvoiceq1/typhoon2/transcript_kokoro_wav/ --judge_output_dir judge_outputs/advvoiceq1_v2/judge_gpt4o_prompt1.1_candidate_typ2kokoro --randomize False
+
+    # usage: python evaluate_advvoiceq1_v2.py --model_output_dir experiments/advvoiceq1/qwen2/text_kokoro --judge_output_dir judge_outputs/advvoiceq1_v2/judge_gpt4o_prompt1.1_candidate_qwen2kokoro  --randomize False
+
+    # usage: python evaluate_advvoiceq1_v2.py --model_output_dir experiments/advvoiceq1/gpt4o_text/text_kokoro --judge_output_dir judge_outputs/advvoiceq1_v2/judge_gpt4o_prompt1.1_candidate_gpt4oTEXTkokoro --randomize False
+
+    # usage: python evaluate_advvoiceq1_v2.py --model_output_dir experiments/advvoiceq1/moshi/audio --judge_output_dir judge_outputs/advvoiceq1_v2/judge_gpt4o_prompt1.1_candidate_moshi  --randomize False
 
 if __name__ == "__main__":
     main()
