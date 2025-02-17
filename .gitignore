@@ -72,6 +72,13 @@ elevenLabs/generated_kokoro_audio/
 elevenLabs/refined_questions/
 elevenLabs/refined_questions_kokoro_wav/
 elevenLabs/data-chatbot-arena-spoken-style-11labs/
+elevenLabs/refined_questions_kokoro_wav_v1.5
+elevenLabs/refined_questions_kokoro_wav_v1.6
+elevenLabs/refined_questions_kokoro_wav_v1.7
+elevenLabs/refined_questions_v1.5
+elevenLabs/refined_questions_v1.6
+elevenLabs/refined_questions_v1.7
+elevenLabs/refined_questions_v2
 
 # leaderboard (alpaca-eval like)
 eval-leaderboard/experiments/
@@ -79,3 +86,8 @@ eval-leaderboard/judge_outputs/
 eval-leaderboard/judge_outputs_v0/
 eval-leaderboard/*.wav
 eval-leaderboard/misaki
+
+# other temp files
+eval-leaderboard/inference_advvoiceq1_moshi_Backup.py
+eval-leaderboard/inference_advvoiceq1_moshi_notwork.py
+eval-leaderboard/leaderboard-exp2.1.ipynb
