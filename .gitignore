@@ -91,3 +91,8 @@ eval-leaderboard/misaki
 eval-leaderboard/inference_advvoiceq1_moshi_Backup.py
 eval-leaderboard/inference_advvoiceq1_moshi_notwork.py
 eval-leaderboard/leaderboard-exp2.1.ipynb
+
+# advvoiceq1
+advanced-voice-gen-task-v1/classification/*.pdf
+advanced-voice-gen-task-v1/questions1_kokoro_wav
+advanced-voice-gen-task-v1/classification/adv_v1/
