@@ -12,13 +12,25 @@ prompt_template = """I'm working on evaluating paralinguistic characteristics of
 Your task is to help me categorize these instructions into 5 classes. If the instruction contains multiple classes, please select the most dominant class. You also help me come up these classes. Please provide the classification in the following format:
 
 {{
-    "class_1": ["id1", "id2", ...],
-    "class_2": ["id3", "id4", ...],
-    "class_3": ["id5", "id6", ...],
+    "class_1": 
+        {{
+            "description": "xxx",
+            "items": ["id1", "id2", ...]
+        }},
+    "class_2": 
+        {{
+            "description": "xxx",
+            "items": ["id3", "id4", ...]
+        }}
+    "class_3": 
+        {{
+            "description": "xxx",
+            "items": ["id5", "id6", ...]
+        }}
     ...
 }}
 
-where "id1", "id2", ... are the IDs of the instructions in the class, and "class_1", "class_2", ... are the nmae of classes (e.g., accent, tones, etc). Please strictly follow the format above. Do not include any additional information. Here are the instructions:
+where "id1", "id2", ... are the IDs of the instructions in the class, "xxx" is a detailed description of the class, and "class_1", "class_2", ... are the name of classes (e.g., the actual value of "class_1" could be Accent abd Pronunciation Variations). First, provide some planning on how many classes you would like to create and what they are. Then, analyze each instruction one by one. Finally provide the classification in the format above, and note that please use [[Start Final Prediction]] to indicate that you are ready to provide the final classification.:
 """.strip()
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
@@ -33,9 +45,8 @@ def run(
     instruction_dict_str = json.dumps(instruction_dict, indent=4)
 
     prompt = prompt_template.format(instructions=instruction_dict_str)
-    import ipdb; ipdb.set_trace()   
     completion = client.chat.completions.create(
-        model="gpt-4o",
+        model="o1-2024-12-17",
         messages=[
             {"role": "system", "content": "You are a helpful assistant."},
             {
@@ -43,7 +54,7 @@ def run(
                 "content": prompt
             }
         ],
-        temperature=0.0,
+        # temperature=0.7,
     )
     response = completion.choices[0].message.content.strip()
     import ipdb; ipdb.set_trace()

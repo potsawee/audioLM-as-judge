@@ -109,13 +109,19 @@ if __name__ == "__main__":
     parser.add_argument("--input_dir", 
         type=str, 
         # default="/data/workspace/ppotsawee/audioLM-as-judge/style-control/refined_questions/",
-        default="/data/workspace/ppotsawee/audioLM-as-judge/elevenLabs/refined_questions/",
+        # default="/data/workspace/ppotsawee/audioLM-as-judge/elevenLabs/refined_questions/",
+        # default="/data/workspace/ppotsawee/audioLM-as-judge/elevenLabs/refined_questions_v1.5/",
+        # default="/data/workspace/ppotsawee/audioLM-as-judge/elevenLabs/refined_questions_v1.6/",
+        default="/data/workspace/ppotsawee/audioLM-as-judge/elevenLabs/refined_questions_v1.7/",
         help="Path to the input dir containing files to process."
     )
     parser.add_argument("--wav_dir", 
         type=str, 
         # default="/data/workspace/ppotsawee/audioLM-as-judge/style-control/refined_questions_kokoro_wav/",
-        default="/data/workspace/ppotsawee/audioLM-as-judge/elevenLabs/refined_questions_kokoro_wav/",
+        # default="/data/workspace/ppotsawee/audioLM-as-judge/elevenLabs/refined_questions_kokoro_wav/",
+        # default="/data/workspace/ppotsawee/audioLM-as-judge/elevenLabs/refined_questions_kokoro_wav_v1.5/",
+        # default="/data/workspace/ppotsawee/audioLM-as-judge/elevenLabs/refined_questions_kokoro_wav_v1.6/",
+        default="/data/workspace/ppotsawee/audioLM-as-judge/elevenLabs/refined_questions_kokoro_wav_v1.7/",
         help="Path to the output file to save the synthesis results."
     )
     args = parser.parse_args()

@@ -189,11 +189,11 @@ def main():
     parser.add_argument("--output_path", type=str, required=True, help="Output Path")
     args = parser.parse_args()
     experiment(args.dataset, args.output_path)
-    # usage: python exp1_chatbotarenastyle_gpt_audio_audio_styleonly_samecontent.py --dataset potsawee/chatbot-arena-spoken-style-samecontent --output_path experiments/chatbot-arena-style-654/exp1_audio_audio_gpt4o.styleonly.samecontent.jsonl
+    # usage: python exp1_chatbotarenastyle_gpt_audio_audio_styleonly.py --dataset potsawee/chatbot-arena-spoken-style-samecontent --output_path experiments/chatbot-arena-style-654/exp1_audio_audio_gpt4o.styleonly.samecontent.jsonl
 
-    # usage: python exp1_chatbotarenastyle_gpt_audio_audio_styleonly_samecontent.py --dataset potsawee/chatbot-arena-spoken-style-11labs-samecontent --output_path experiments/chatbot-arena-style-11labs-632/exp1_audio_audio_gpt4o.styleonly.samecontent.jsonl
+    # usage: python exp1_chatbotarenastyle_gpt_audio_audio_styleonly.py --dataset potsawee/chatbot-arena-spoken-style-11labs-samecontent --output_path experiments/chatbot-arena-style-11labs-632/exp1_audio_audio_gpt4o.styleonly.samecontent.jsonl
 
-    # usage: python exp1_chatbotarenastyle_gpt_audio_audio_styleonly_samecontent.py --dataset potsawee/chatbot-arena-spoken-style-11labs --output_path experiments/chatbot-arena-style-11labs-632/exp1_audio_audio_gpt4o.styleonly.jsonl
+    # usage: python exp1_chatbotarenastyle_gpt_audio_audio_styleonly.py --dataset potsawee/chatbot-arena-spoken-style-11labs --output_path experiments/chatbot-arena-style-11labs-632/exp1_audio_audio_gpt4o.styleonly.jsonl
 
 if __name__ == "__main__":
     main()

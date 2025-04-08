@@ -36,7 +36,13 @@ def analyze_comparison(text):
 
     Text: "{text}"
 
-    You must strictly output the JSON format. Do not include any additional information. Your output will be parsed by `json.loads` in Python, so don't include any other text.
+    You must strictly output the JSON format like this:
+    {{
+        "content": "X",
+        "style": "X",
+        "overall": "X"
+    }}
+    where X is one of "A", "B", or "C" based on your analysis. Do not include any additional information. Your output will be parsed by `json.loads` in Python, so don't include any other text.
     """
 
     for i in range(10):
@@ -50,8 +56,9 @@ def analyze_comparison(text):
                 }
             ]
         )
-        response = completion.choices[0].message.content.strip()
         try:
+            response = completion.choices[0].message.content.strip()
+            response = response.strip("```").strip("json").strip()
             parsed = json.loads(response)
             assert "content" in parsed
             assert "style" in parsed
@@ -59,6 +66,7 @@ def analyze_comparison(text):
             for v in parsed.values():
                 assert v in ["A", "B", "C"]
         except:
+            import ipdb; ipdb.set_trace()
             print("failed at attempt", i+1)
     # Extract and return the result
     return parsed
@@ -75,7 +83,18 @@ def run(
             data.append(x)
     print("len(data):", len(data))
 
-    for i in tqdm(range(len(data))):
+    outputs = []
+    if os.path.exists(output_path):
+        with open(output_path, "r") as f:
+            for line in f:
+                x = json.loads(line)
+                outputs.append(x)
+        num_done = len(outputs)
+    else:
+        num_done = 0
+    print("num_done = {}".format(num_done))
+
+    for i in tqdm(range(num_done, len(data))):    
         x = data[i] # ['data_path', 'data', 'prompt_text', 'response']
         response = x['response']   
 

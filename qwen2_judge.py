@@ -9,36 +9,6 @@ import io
 import soundfile as sf
 from datasets import load_dataset
 
-def get_encoded_audio_from_path(filepath):
-    """
-    Encodes an audio file to a Base64 string.
-
-    Args:
-        filepath (str): Path to the audio file.
-    
-    Returns:
-        str: Base64-encoded string of the audio file.
-    """
-    with open(filepath, "rb") as audio_file:
-        return base64.b64encode(audio_file.read()).decode("utf-8")
-
-def get_encoded_audio_from_array(audio_array, sample_rate):
-    """
-    Encodes a NumPy audio array to a Base64 string.
-    
-    Args:
-        audio_array (numpy.ndarray): Audio data as a NumPy array.
-        sample_rate (int): Sample rate of the audio.
-    
-    Returns:
-        str: Base64-encoded string of the audio array.
-    """
-    # Save the audio array to a buffer in WAV format
-    buffer = io.BytesIO()
-    sf.write(buffer, audio_array, samplerate=sample_rate, format="WAV")
-    buffer.seek(0)
-    return base64.b64encode(buffer.read()).decode("utf-8")
-
 def load_and_preprocess_audio(audio_path, processor):
     """Load and preprocess the audio from the given path."""
     audio, _ = librosa.load(audio_path, sr=processor.feature_extractor.sampling_rate)

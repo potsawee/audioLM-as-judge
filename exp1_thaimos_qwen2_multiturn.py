@@ -115,7 +115,7 @@ def run_inference(conversation):
                        sampling_rate=processor.feature_extractor.sampling_rate
                        ).to("cuda")
 
-    generate_ids = model.generate(**inputs, max_length=6000, do_sample=False)
+    generate_ids = model.generate(**inputs, max_length=4000, do_sample=True, temperature=0.2)
     generate_ids = generate_ids[:, inputs.input_ids.size(1):]
     response = processor.batch_decode(generate_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)[0]
     return response

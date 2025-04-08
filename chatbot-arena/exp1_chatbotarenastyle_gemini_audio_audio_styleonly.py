@@ -72,16 +72,17 @@ Please compare the two responses on the criterion. Begin your evaluation by comp
 
 After providing your explanation, please provide your final verdict in the following format:
 
-[Verdict]: [[X]] where X can be A or B"""
+[Verdict]: [[X]] where X can be A or B (you must choose one!)"""
 
 def experiment(
+    dataset, # potsawee/chatbot-arena-spoken-style-samecontent, 
     output_path,
 ):
     print("-----------------------------")
     print("output_path:", output_path)
     print("-----------------------------")
 
-    data = load_dataset("potsawee/chatbot-arena-spoken-style")['train']
+    data = load_dataset(dataset)['train']
     print("len(data):", len(data))
 
     outputs = []
@@ -134,18 +135,25 @@ def experiment(
         }
 
         print(i, response)
-        print("winner_content:", data[i]['winner_content'])
         print("winner_style:", data[i]['winner_style'])
         with open(output_path, 'a') as f:
             f.write(json.dumps(item, ensure_ascii=False) + '\n')
 
 def main():
     parser = argparse.ArgumentParser(description="Run a specific model via gradio_client.")
+    parser.add_argument("--dataset", type=str, required=True, help="HF dataset")
     parser.add_argument("--output_path", type=str, required=True, help="Output Path")
     args = parser.parse_args()
-    experiment(args.output_path)
+    experiment(args.dataset, args.output_path)
 
-    # usage: python exp1_chatbotarenastyle_gemini_audio_audio_styleonly.py --output_path experiments/chatbot-arena-style-654/exp1_audio_audio_gemini15flash.styleonly.jsonl
+    # usage: python exp1_chatbotarenastyle_gemini_audio_audio_styleonly.py --dataset potsawee/chatbot-arena-spoken-style  --output_path experiments/chatbot-arena-style-654/exp1_audio_audio_gemini15flash.styleonly.jsonl
+
+    # usage: python exp1_chatbotarenastyle_gemini_audio_audio_styleonly.py --dataset potsawee/chatbot-arena-spoken-style-samecontent --output_path experiments/chatbot-arena-style-654/exp1_audio_audio_gemini15flash.styleonly.samecontent.jsonl
+
+    # usage: python exp1_chatbotarenastyle_gemini_audio_audio_styleonly.py --dataset potsawee/chatbot-arena-spoken-style-11labs-samecontent --output_path experiments/chatbot-arena-style-11labs-632/exp1_audio_audio_gemini15flash.styleonly.samecontent.jsonl
+
+    # usage: python exp1_chatbotarenastyle_gemini_audio_audio_styleonly.py --dataset potsawee/chatbot-arena-spoken-style-11labs --output_path experiments/chatbot-arena-style-11labs-632/exp1_audio_audio_gemini15flash.styleonly.jsonl
+
 
 if __name__ == "__main__":
     main()
