@@ -45,40 +45,47 @@ pytest_cache/
 Thumbs.db
 
 # data
-data/
+# data/
 
 # tmp
 tmp/
 
-# chatbot arena
-chatbot-arena/kokoroTTS/misaki
-chatbot-arena/kokoroTTS/*json
-chatbot-arena/kokoroTTS/wav/*
-chatbot-arena/kokoroTTS/wav_af_bella/*
-chatbot-arena/kokoroTTS/ja_words.txt
-chatbot-arena/kokoroTTS/chatbot-arena-spoken-1turn-english-whisper-transcript.jsonl
-chatbot-arena/experiments
+# kokoroTTS
+kokoroTTS/misaki
+kokoroTTS/*json
+kokoroTTS/wav/*
+kokoroTTS/wav_af_bella/*
+kokoroTTS/ja_words.txt
+kokoroTTS/chatbot-arena-spoken-1turn-english-whisper-transcript.jsonl
+# lexical-context-chatbot-arena/experiments
+
+# speech-quality
+speech-quality/data/verbosity
+speech-quality/experiments/somos
+speech-quality/experiments/thaimos
+speech-quality/experiments/tmhintqi
+speech-quality/experiments/tts_arena
 
 # style control
-style-control/gpt*.wav
-style-control/batch1_generated_gpt_audio/
-style-control/refined_questions/
-style-control/refined_questions_kokoro_wav/
-style-control/batch1_generated_gpt_audio_question/
+paralinguistic/data-gpt-style/gpt*.wav
+paralinguistic/data-gpt-style/batch1_generated_gpt_audio/
+paralinguistic/data-gpt-style/refined_questions/
+paralinguistic/data-gpt-style/refined_questions_kokoro_wav/
+paralinguistic/data-gpt-style/batch1_generated_gpt_audio_question/
 
 # elevenLabs
-elevenLabs/generated_11labs_audio/
-elevenLabs/generated_kokoro_audio/
-elevenLabs/refined_questions/
-elevenLabs/refined_questions_kokoro_wav/
-elevenLabs/data-chatbot-arena-spoken-style-11labs/
-elevenLabs/refined_questions_kokoro_wav_v1.5
-elevenLabs/refined_questions_kokoro_wav_v1.6
-elevenLabs/refined_questions_kokoro_wav_v1.7
-elevenLabs/refined_questions_v1.5
-elevenLabs/refined_questions_v1.6
-elevenLabs/refined_questions_v1.7
-elevenLabs/refined_questions_v2
+paralinguistic/data-elevenLabs/generated_11labs_audio/
+paralinguistic/data-elevenLabs/generated_kokoro_audio/
+paralinguistic/data-elevenLabs/refined_questions/
+paralinguistic/data-elevenLabs/refined_questions_kokoro_wav/
+paralinguistic/data-elevenLabs/data-chatbot-arena-spoken-style-11labs/
+paralinguistic/data-elevenLabs/refined_questions_kokoro_wav_v1.5
+paralinguistic/data-elevenLabs/refined_questions_kokoro_wav_v1.6
+paralinguistic/data-elevenLabs/refined_questions_kokoro_wav_v1.7
+paralinguistic/data-elevenLabs/refined_questions_v1.5
+paralinguistic/data-elevenLabs/refined_questions_v1.6
+paralinguistic/data-elevenLabs/refined_questions_v1.7
+paralinguistic/data-elevenLabs/refined_questions_v2
 
 # leaderboard (alpaca-eval like)
 eval-leaderboard/experiments/
@@ -96,3 +103,5 @@ eval-leaderboard/leaderboard-exp2.1.ipynb
 advanced-voice-gen-task-v1/classification/*.pdf
 advanced-voice-gen-task-v1/questions1_kokoro_wav
 advanced-voice-gen-task-v1/classification/adv_v1/
+
+*.pdf
