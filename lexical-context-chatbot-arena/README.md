@@ -1,8 +1,19 @@
-# Scripts for Running Chatbot Arena Evaluation
+# Experiment: Chatbot Arena (Lexical Content Evaluation)
 - Lexical content evaluation
 - Speech-based ChatbotArena (i.e., speech is synthesized by TTS) but the contents were taken from the original Chatbot Arena
 
 ## Structure
+
+### data
+data
+
+### notebooks
+Jupyter notebooks for data processing and analysis
+
+### experiments
+Output cache files from running scripts
+
+### scripts
 ```
 {exp_name}_{judge_llm}_{input_modal}_{output_modal}_{...}.py
 ```
