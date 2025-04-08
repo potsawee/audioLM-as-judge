@@ -22,3 +22,6 @@ Output cache files from running scripts
 - `input_modal`: input modality (e.g., text, audio). text = ground-truth text, asr = asr transcript, audio = TTS synthesized speech
 - `output_modal`: output modality (e.g., text, audio). text = ground-truth text, asr = asr transcript, audio = TTS synthesized speech
 - `...`: other additional experiments (e.g., `AWGN` = Additive White Gaussian Noise ablation, `style_only` = Style bias experiment)
+
+### Others
+`process_chatbot_arena`: old code for processing chatbot arena data
