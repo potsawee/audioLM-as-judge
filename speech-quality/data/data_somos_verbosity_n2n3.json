@@ -1,0 +1,1282 @@
+[
+    [
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_news_2009_0047_196.wav",
+            "text": "There is never any trouble with Ajax and Celtic fans.",
+            "mos": 3.363636363636364,
+            "uttId": "news_2009_0047_196"
+        },
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_news_2009_0047_196.wav",
+            "text": "There is never any trouble with Ajax and Celtic fans.",
+            "mos": 3.363636363636364,
+            "uttId": "news_2009_0047_196"
+        }
+    ],
+    [
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_conv_2008_0055_110.wav",
+            "text": "I'm looking for a place to drink.",
+            "mos": 3.4166666666666665,
+            "uttId": "conv_2008_0055_110"
+        },
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_conv_2008_0055_110.wav",
+            "text": "I'm looking for a place to drink.",
+            "mos": 3.4166666666666665,
+            "uttId": "conv_2008_0055_110"
+        }
+    ],
+    [
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_reportorial_2011_0388_001.wav",
+            "text": "Total Merkur sales for the first nine months dropped forty-six percent from a year ago to just six thousand three hundred twenty cars .",
+            "mos": 4.181818181818182,
+            "uttId": "reportorial_2011_0388_001"
+        },
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_reportorial_2011_0388_001.wav",
+            "text": "Total Merkur sales for the first nine months dropped forty-six percent from a year ago to just six thousand three hundred twenty cars .",
+            "mos": 4.181818181818182,
+            "uttId": "reportorial_2011_0388_001"
+        }
+    ],
+    [
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_news_2010_0138_018.wav",
+            "text": "Ocean Terminal is going to be a knock-out, he said.",
+            "mos": 2.1666666666666665,
+            "uttId": "news_2010_0138_018"
+        },
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_news_2010_0138_018.wav",
+            "text": "Ocean Terminal is going to be a knock-out, he said.",
+            "mos": 2.1666666666666665,
+            "uttId": "news_2010_0138_018"
+        }
+    ],
+    [
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_news_2007_0064_144.wav",
+            "text": "What lies ahead for Cybill, recent winner of a Golden Globe Award, and for \"Cybill\"?",
+            "mos": 3.7,
+            "uttId": "news_2007_0064_144"
+        },
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_news_2007_0064_144.wav",
+            "text": "What lies ahead for Cybill, recent winner of a Golden Globe Award, and for \"Cybill\"?",
+            "mos": 3.7,
+            "uttId": "news_2007_0064_144"
+        }
+    ],
+    [
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_conv_2008_0038_061.wav",
+            "text": "How many stars does the Alexander Hotel have?",
+            "mos": 2.909090909090909,
+            "uttId": "conv_2008_0038_061"
+        },
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_conv_2008_0038_061.wav",
+            "text": "How many stars does the Alexander Hotel have?",
+            "mos": 2.909090909090909,
+            "uttId": "conv_2008_0038_061"
+        }
+    ],
+    [
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_sus_2011_0397_166.wav",
+            "text": "The spring planned the store that dreamed.",
+            "mos": 3.230769230769231,
+            "uttId": "sus_2011_0397_166"
+        },
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_sus_2011_0397_166.wav",
+            "text": "The spring planned the store that dreamed.",
+            "mos": 3.230769230769231,
+            "uttId": "sus_2011_0397_166"
+        }
+    ],
+    [
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_reportorial_2011_0439_200.wav",
+            "text": "Digital's failure to deliver a true mainframe-class machine before now may have cost the company as much as one billion dollars in revenue in fiscal nineteen eighty nine , Mister Willman says .",
+            "mos": 2.1538461538461537,
+            "uttId": "reportorial_2011_0439_200"
+        },
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_reportorial_2011_0439_200.wav",
+            "text": "Digital's failure to deliver a true mainframe-class machine before now may have cost the company as much as one billion dollars in revenue in fiscal nineteen eighty nine , Mister Willman says .",
+            "mos": 2.1538461538461537,
+            "uttId": "reportorial_2011_0439_200"
+        }
+    ],
+    [
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_news_2010_0187_124.wav",
+            "text": "It was a devious, cowardly and terrible thing to do.",
+            "mos": 2.923076923076923,
+            "uttId": "news_2010_0187_124"
+        },
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_news_2010_0187_124.wav",
+            "text": "It was a devious, cowardly and terrible thing to do.",
+            "mos": 2.923076923076923,
+            "uttId": "news_2010_0187_124"
+        }
+    ],
+    [
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_novel_2008_0192_195.wav",
+            "text": "You Americans, you see, are more brutal than we.",
+            "mos": 3.1666666666666665,
+            "uttId": "novel_2008_0192_195"
+        },
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_novel_2008_0192_195.wav",
+            "text": "You Americans, you see, are more brutal than we.",
+            "mos": 3.1666666666666665,
+            "uttId": "novel_2008_0192_195"
+        }
+    ],
+    [
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_broadcast_2010_0055_077.wav",
+            "text": "Even if he hasn't, he has broken no law.",
+            "mos": 3.5454545454545454,
+            "uttId": "broadcast_2010_0055_077"
+        },
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_broadcast_2010_0055_077.wav",
+            "text": "Even if he hasn't, he has broken no law.",
+            "mos": 3.5454545454545454,
+            "uttId": "broadcast_2010_0055_077"
+        }
+    ],
+    [
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_sus_2009_0092_061.wav",
+            "text": "The suspect mixed the pain that crept.",
+            "mos": 2.75,
+            "uttId": "sus_2009_0092_061"
+        },
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_sus_2009_0092_061.wav",
+            "text": "The suspect mixed the pain that crept.",
+            "mos": 2.75,
+            "uttId": "sus_2009_0092_061"
+        }
+    ],
+    [
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_novel_2009_0078_191.wav",
+            "text": "It was Wolf Larsen's turn to be puzzled.",
+            "mos": 3.333333333333333,
+            "uttId": "novel_2009_0078_191"
+        },
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_novel_2009_0078_191.wav",
+            "text": "It was Wolf Larsen's turn to be puzzled.",
+            "mos": 3.333333333333333,
+            "uttId": "novel_2009_0078_191"
+        }
+    ],
+    [
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_news_2008_0038_043.wav",
+            "text": "Aye, on the white telephone, said another.",
+            "mos": 2.6666666666666665,
+            "uttId": "news_2008_0038_043"
+        },
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_news_2008_0038_043.wav",
+            "text": "Aye, on the white telephone, said another.",
+            "mos": 2.6666666666666665,
+            "uttId": "news_2008_0038_043"
+        }
+    ],
+    [
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_novel_2008_0071_177.wav",
+            "text": "Philip's fingers relaxed their grip on the table.",
+            "mos": 2.8125,
+            "uttId": "novel_2008_0071_177"
+        },
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_novel_2008_0071_177.wav",
+            "text": "Philip's fingers relaxed their grip on the table.",
+            "mos": 2.8125,
+            "uttId": "novel_2008_0071_177"
+        }
+    ],
+    [
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_conv_2008_0061_114.wav",
+            "text": "I'm looking for a cocktail bar in the South side of town.",
+            "mos": 2.1,
+            "uttId": "conv_2008_0061_114"
+        },
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_conv_2008_0061_114.wav",
+            "text": "I'm looking for a cocktail bar in the South side of town.",
+            "mos": 2.1,
+            "uttId": "conv_2008_0061_114"
+        }
+    ],
+    [
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_LJ037-0018_103.wav",
+            "text": "Scoggins saw him, and heard him mutter either, Poor damn cop, or Poor dumb cop.",
+            "mos": 3.6666666666666665,
+            "uttId": "LJ037-0018_103"
+        },
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_LJ037-0018_103.wav",
+            "text": "Scoggins saw him, and heard him mutter either, Poor damn cop, or Poor dumb cop.",
+            "mos": 3.6666666666666665,
+            "uttId": "LJ037-0018_103"
+        }
+    ],
+    [
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_news_2009_0107_195.wav",
+            "text": "On the other, there was family and social pressure.",
+            "mos": 3.727272727272727,
+            "uttId": "news_2009_0107_195"
+        },
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_news_2009_0107_195.wav",
+            "text": "On the other, there was family and social pressure.",
+            "mos": 3.727272727272727,
+            "uttId": "news_2009_0107_195"
+        }
+    ],
+    [
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_novel_2011_0059_124.wav",
+            "text": "The traders of Europe had to find another route.",
+            "mos": 2.272727272727273,
+            "uttId": "novel_2011_0059_124"
+        },
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_novel_2011_0059_124.wav",
+            "text": "The traders of Europe had to find another route.",
+            "mos": 2.272727272727273,
+            "uttId": "novel_2011_0059_124"
+        }
+    ],
+    [
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_reportorial_2011_0324_056.wav",
+            "text": "Unfortunately for Mister Maynard , another branch of the U.S.D.A. , the Agricultural Marketing Service , was in charge of eggs .",
+            "mos": 2.2,
+            "uttId": "reportorial_2011_0324_056"
+        },
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_reportorial_2011_0324_056.wav",
+            "text": "Unfortunately for Mister Maynard , another branch of the U.S.D.A. , the Agricultural Marketing Service , was in charge of eggs .",
+            "mos": 2.2,
+            "uttId": "reportorial_2011_0324_056"
+        }
+    ],
+    [
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_news_2013_0033_007.wav",
+            "text": "I just wonder what those eight fine men would think about it.",
+            "mos": 3.0,
+            "uttId": "news_2013_0033_007"
+        },
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_news_2013_0033_007.wav",
+            "text": "I just wonder what those eight fine men would think about it.",
+            "mos": 3.0,
+            "uttId": "news_2013_0033_007"
+        }
+    ],
+    [
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_reportorial_2011_0272_193.wav",
+            "text": "The Big Board declined to name the Wall Street firms involved in the activity Friday and Monday , or the type of strategies used .",
+            "mos": 3.8181818181818175,
+            "uttId": "reportorial_2011_0272_193"
+        },
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_reportorial_2011_0272_193.wav",
+            "text": "The Big Board declined to name the Wall Street firms involved in the activity Friday and Monday , or the type of strategies used .",
+            "mos": 3.8181818181818175,
+            "uttId": "reportorial_2011_0272_193"
+        }
+    ],
+    [
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_reportorial_2011_0440_172.wav",
+            "text": "The existence of the guidelines has become known since President Bush disclosed them privately to seven Republican senators at a White House meeting last Monday .",
+            "mos": 3.1818181818181817,
+            "uttId": "reportorial_2011_0440_172"
+        },
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_reportorial_2011_0440_172.wav",
+            "text": "The existence of the guidelines has become known since President Bush disclosed them privately to seven Republican senators at a White House meeting last Monday .",
+            "mos": 3.1818181818181817,
+            "uttId": "reportorial_2011_0440_172"
+        }
+    ],
+    [
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_reportorial_2011_0303_057.wav",
+            "text": "In the year-ago period , the company earned twelve point nine million dollars, or fourty-five cents a share , on sales of two hundred forty-seven million .",
+            "mos": 3.0,
+            "uttId": "reportorial_2011_0303_057"
+        },
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_reportorial_2011_0303_057.wav",
+            "text": "In the year-ago period , the company earned twelve point nine million dollars, or fourty-five cents a share , on sales of two hundred forty-seven million .",
+            "mos": 3.0,
+            "uttId": "reportorial_2011_0303_057"
+        }
+    ],
+    [
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_reportorial_2011_0092_166.wav",
+            "text": "From January through September , the distance flown by Lufthansa airplanes rose five point six percent to two hundred sixty six point two million kilometers from a year earlier , the company added .",
+            "mos": 2.857142857142857,
+            "uttId": "reportorial_2011_0092_166"
+        },
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_reportorial_2011_0092_166.wav",
+            "text": "From January through September , the distance flown by Lufthansa airplanes rose five point six percent to two hundred sixty six point two million kilometers from a year earlier , the company added .",
+            "mos": 2.857142857142857,
+            "uttId": "reportorial_2011_0092_166"
+        }
+    ],
+    [
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_news_2010_0130_130.wav",
+            "text": "All we had on was our swimming stuff and towels.",
+            "mos": 2.4375,
+            "uttId": "news_2010_0130_130"
+        },
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_news_2010_0130_130.wav",
+            "text": "All we had on was our swimming stuff and towels.",
+            "mos": 2.4375,
+            "uttId": "news_2010_0130_130"
+        }
+    ],
+    [
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_novel_2008_0181_067.wav",
+            "text": "Young Liverpool is ahead with the main outfit.",
+            "mos": 3.0,
+            "uttId": "novel_2008_0181_067"
+        },
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_novel_2008_0181_067.wav",
+            "text": "Young Liverpool is ahead with the main outfit.",
+            "mos": 3.0,
+            "uttId": "novel_2008_0181_067"
+        }
+    ],
+    [
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_LJ046-0194_018.wav",
+            "text": "Members of the White House detail, were expected to familiarize themselves with the descriptions and photographs, of the highest risk cases.",
+            "mos": 3.1538461538461537,
+            "uttId": "LJ046-0194_018"
+        },
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_LJ046-0194_018.wav",
+            "text": "Members of the White House detail, were expected to familiarize themselves with the descriptions and photographs, of the highest risk cases.",
+            "mos": 3.1538461538461537,
+            "uttId": "LJ046-0194_018"
+        }
+    ],
+    [
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_novel_2008_0192_029.wav",
+            "text": "You Americans, you see, are more brutal than we.",
+            "mos": 3.2222222222222223,
+            "uttId": "novel_2008_0192_029"
+        },
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_novel_2008_0192_029.wav",
+            "text": "You Americans, you see, are more brutal than we.",
+            "mos": 3.2222222222222223,
+            "uttId": "novel_2008_0192_029"
+        }
+    ],
+    [
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_novel_2008_0106_096.wav",
+            "text": "Bill Roberts is a good boy.",
+            "mos": 3.090909090909091,
+            "uttId": "novel_2008_0106_096"
+        },
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_novel_2008_0106_096.wav",
+            "text": "Bill Roberts is a good boy.",
+            "mos": 3.090909090909091,
+            "uttId": "novel_2008_0106_096"
+        }
+    ],
+    [
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_wiki_0089_187.wav",
+            "text": "The blogosphere is made up of all blogs and their interconnections.",
+            "mos": 3.1666666666666665,
+            "uttId": "wiki_0089_187"
+        },
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_wiki_0089_187.wav",
+            "text": "The blogosphere is made up of all blogs and their interconnections.",
+            "mos": 3.1666666666666665,
+            "uttId": "wiki_0089_187"
+        }
+    ],
+    [
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_novel_2010_0073_034.wav",
+            "text": "Glad to see you, Harry.",
+            "mos": 2.25,
+            "uttId": "novel_2010_0073_034"
+        },
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_novel_2010_0073_034.wav",
+            "text": "Glad to see you, Harry.",
+            "mos": 2.25,
+            "uttId": "novel_2010_0073_034"
+        }
+    ],
+    [
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_conv_2009_0012-1_170.wav",
+            "text": "I found eight restaurants, which have vegetarian cuisine.",
+            "mos": 2.6666666666666665,
+            "uttId": "conv_2009_0012-1_170"
+        },
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_conv_2009_0012-1_170.wav",
+            "text": "I found eight restaurants, which have vegetarian cuisine.",
+            "mos": 2.6666666666666665,
+            "uttId": "conv_2009_0012-1_170"
+        }
+    ],
+    [
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_novel_2007_0040_014.wav",
+            "text": "The very opposite is true; they are discouraged vagabonds.",
+            "mos": 3.4,
+            "uttId": "novel_2007_0040_014"
+        },
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_novel_2007_0040_014.wav",
+            "text": "The very opposite is true; they are discouraged vagabonds.",
+            "mos": 3.4,
+            "uttId": "novel_2007_0040_014"
+        }
+    ],
+    [
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_conv_2007_0044_061.wav",
+            "text": "You're lucky your boss lets you take a vacation.",
+            "mos": 2.7142857142857144,
+            "uttId": "conv_2007_0044_061"
+        },
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_conv_2007_0044_061.wav",
+            "text": "You're lucky your boss lets you take a vacation.",
+            "mos": 2.7142857142857144,
+            "uttId": "conv_2007_0044_061"
+        }
+    ],
+    [
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_novel_2008_0148_164.wav",
+            "text": "The Thirty Mile River was wide open.",
+            "mos": 3.4615384615384617,
+            "uttId": "novel_2008_0148_164"
+        },
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_novel_2008_0148_164.wav",
+            "text": "The Thirty Mile River was wide open.",
+            "mos": 3.4615384615384617,
+            "uttId": "novel_2008_0148_164"
+        }
+    ],
+    [
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_booksent_2012_0040_076.wav",
+            "text": "It was for a worthy, even a noble, purpose.",
+            "mos": 3.5384615384615383,
+            "uttId": "booksent_2012_0040_076"
+        },
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_booksent_2012_0040_076.wav",
+            "text": "It was for a worthy, even a noble, purpose.",
+            "mos": 3.5384615384615383,
+            "uttId": "booksent_2012_0040_076"
+        }
+    ],
+    [
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_conv_2007_0021_002.wav",
+            "text": "Walk another five hundred meters or so along this road, though the road has some turns.",
+            "mos": 2.75,
+            "uttId": "conv_2007_0021_002"
+        },
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_conv_2007_0021_002.wav",
+            "text": "Walk another five hundred meters or so along this road, though the road has some turns.",
+            "mos": 2.75,
+            "uttId": "conv_2007_0021_002"
+        }
+    ],
+    [
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_news_2010_0031_120.wav",
+            "text": "The government failed to draw the lessons from earlier outbreaks.",
+            "mos": 4.0,
+            "uttId": "news_2010_0031_120"
+        },
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_news_2010_0031_120.wav",
+            "text": "The government failed to draw the lessons from earlier outbreaks.",
+            "mos": 4.0,
+            "uttId": "news_2010_0031_120"
+        }
+    ],
+    [
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_novel_2008_0116_057.wav",
+            "text": "Jacob Henderson looked on with mild disapproval.",
+            "mos": 3.333333333333333,
+            "uttId": "novel_2008_0116_057"
+        },
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_novel_2008_0116_057.wav",
+            "text": "Jacob Henderson looked on with mild disapproval.",
+            "mos": 3.333333333333333,
+            "uttId": "novel_2008_0116_057"
+        }
+    ],
+    [
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_reportorial_2011_0399_147.wav",
+            "text": "Excluding the one-time charges , the company would have posted earnings of two hundred ninety-eight million dollars, or seventy-three cents a share .",
+            "mos": 4.214285714285714,
+            "uttId": "reportorial_2011_0399_147"
+        },
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_reportorial_2011_0399_147.wav",
+            "text": "Excluding the one-time charges , the company would have posted earnings of two hundred ninety-eight million dollars, or seventy-three cents a share .",
+            "mos": 4.214285714285714,
+            "uttId": "reportorial_2011_0399_147"
+        }
+    ],
+    [
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_general_0048_116.wav",
+            "text": "Just ask yourself what an emissions trading scheme is all about.",
+            "mos": 2.5454545454545454,
+            "uttId": "general_0048_116"
+        },
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_general_0048_116.wav",
+            "text": "Just ask yourself what an emissions trading scheme is all about.",
+            "mos": 2.5454545454545454,
+            "uttId": "general_0048_116"
+        }
+    ],
+    [
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_wiki_0050_081.wav",
+            "text": "Logan Alexander Paul is an American actor and internet celebrity.",
+            "mos": 3.4,
+            "uttId": "wiki_0050_081"
+        },
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_wiki_0050_081.wav",
+            "text": "Logan Alexander Paul is an American actor and internet celebrity.",
+            "mos": 3.4,
+            "uttId": "wiki_0050_081"
+        }
+    ],
+    [
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_news_2009_0070_003.wav",
+            "text": "Defence solicitor Gerry Sweeney said his client was deeply ashamed.",
+            "mos": 4.0,
+            "uttId": "news_2009_0070_003"
+        },
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_news_2009_0070_003.wav",
+            "text": "Defence solicitor Gerry Sweeney said his client was deeply ashamed.",
+            "mos": 4.0,
+            "uttId": "news_2009_0070_003"
+        }
+    ],
+    [
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_novel_2011_0093_057.wav",
+            "text": "Unconsciously the two men quickened their pace.",
+            "mos": 4.428571428571429,
+            "uttId": "novel_2011_0093_057"
+        },
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_novel_2011_0093_057.wav",
+            "text": "Unconsciously the two men quickened their pace.",
+            "mos": 4.428571428571429,
+            "uttId": "novel_2011_0093_057"
+        }
+    ],
+    [
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_reportorial_2011_0089_057.wav",
+            "text": "Himont is eighty one percent-owned by Montedison S.P.A. of Milan , Italy .",
+            "mos": 3.8,
+            "uttId": "reportorial_2011_0089_057"
+        },
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_reportorial_2011_0089_057.wav",
+            "text": "Himont is eighty one percent-owned by Montedison S.P.A. of Milan , Italy .",
+            "mos": 3.8,
+            "uttId": "reportorial_2011_0089_057"
+        }
+    ],
+    [
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_novel_2009_0083_022.wav",
+            "text": "Purpose does not explain that.",
+            "mos": 3.9,
+            "uttId": "novel_2009_0083_022"
+        },
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_novel_2009_0083_022.wav",
+            "text": "Purpose does not explain that.",
+            "mos": 3.9,
+            "uttId": "novel_2009_0083_022"
+        }
+    ],
+    [
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_booksent_2013_0013_079.wav",
+            "text": "He could not be accountable for his children's want of spirits, or for her want of enjoyment in his company.",
+            "mos": 3.8181818181818175,
+            "uttId": "booksent_2013_0013_079"
+        },
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_booksent_2013_0013_079.wav",
+            "text": "He could not be accountable for his children's want of spirits, or for her want of enjoyment in his company.",
+            "mos": 3.8181818181818175,
+            "uttId": "booksent_2013_0013_079"
+        }
+    ],
+    [
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_novel_2011_0013_058.wav",
+            "text": "Of her beauty her hair had remained.",
+            "mos": 3.769230769230769,
+            "uttId": "novel_2011_0013_058"
+        },
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_novel_2011_0013_058.wav",
+            "text": "Of her beauty her hair had remained.",
+            "mos": 3.769230769230769,
+            "uttId": "novel_2011_0013_058"
+        }
+    ],
+    [
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_conv_2008_0099_103.wav",
+            "text": "How much is the price of a meal?",
+            "mos": 3.7,
+            "uttId": "conv_2008_0099_103"
+        },
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_conv_2008_0099_103.wav",
+            "text": "How much is the price of a meal?",
+            "mos": 3.7,
+            "uttId": "conv_2008_0099_103"
+        }
+    ],
+    [
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_news_2009_0096_110.wav",
+            "text": "He said: Our vets would be nervous about such sales.",
+            "mos": 3.4615384615384617,
+            "uttId": "news_2009_0096_110"
+        },
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_news_2009_0096_110.wav",
+            "text": "He said: Our vets would be nervous about such sales.",
+            "mos": 3.4615384615384617,
+            "uttId": "news_2009_0096_110"
+        }
+    ],
+    [
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_conv_2009_0028-2_191.wav",
+            "text": "It has the best overall quality amongst the matching restaurants.",
+            "mos": 2.75,
+            "uttId": "conv_2009_0028-2_191"
+        },
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_conv_2009_0028-2_191.wav",
+            "text": "It has the best overall quality amongst the matching restaurants.",
+            "mos": 2.75,
+            "uttId": "conv_2009_0028-2_191"
+        }
+    ],
+    [
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_novel_2008_0032_029.wav",
+            "text": "A great leap brings him even with La Belle.",
+            "mos": 3.2,
+            "uttId": "novel_2008_0032_029"
+        },
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_novel_2008_0032_029.wav",
+            "text": "A great leap brings him even with La Belle.",
+            "mos": 3.2,
+            "uttId": "novel_2008_0032_029"
+        }
+    ],
+    [
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_novel_2008_0001_017.wav",
+            "text": "The cold northern sky was brilliant with stars.",
+            "mos": 3.6666666666666665,
+            "uttId": "novel_2008_0001_017"
+        },
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_novel_2008_0001_017.wav",
+            "text": "The cold northern sky was brilliant with stars.",
+            "mos": 3.6666666666666665,
+            "uttId": "novel_2008_0001_017"
+        }
+    ],
+    [
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_conv_2009_0034-1_002.wav",
+            "text": "I found seven seafood restaurants in Leith.",
+            "mos": 3.4545454545454546,
+            "uttId": "conv_2009_0034-1_002"
+        },
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_conv_2009_0034-1_002.wav",
+            "text": "I found seven seafood restaurants in Leith.",
+            "mos": 3.4545454545454546,
+            "uttId": "conv_2009_0034-1_002"
+        }
+    ],
+    [
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_LJ005-0108_060.wav",
+            "text": "the prisoners, without firing, bedding, or sufficient food, spent their days in, surveying their grotesque prison.",
+            "mos": 2.6666666666666665,
+            "uttId": "LJ005-0108_060"
+        },
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_LJ005-0108_060.wav",
+            "text": "the prisoners, without firing, bedding, or sufficient food, spent their days in, surveying their grotesque prison.",
+            "mos": 2.6666666666666665,
+            "uttId": "LJ005-0108_060"
+        }
+    ],
+    [
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_news_2009_0189_004.wav",
+            "text": "But it said talks with the general would continue.",
+            "mos": 3.555555555555556,
+            "uttId": "news_2009_0189_004"
+        },
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_news_2009_0189_004.wav",
+            "text": "But it said talks with the general would continue.",
+            "mos": 3.555555555555556,
+            "uttId": "news_2009_0189_004"
+        }
+    ],
+    [
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_conv_2008_0100_009.wav",
+            "text": "Could you tell me the price of a meal?",
+            "mos": 3.083333333333333,
+            "uttId": "conv_2008_0100_009"
+        },
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_conv_2008_0100_009.wav",
+            "text": "Could you tell me the price of a meal?",
+            "mos": 3.083333333333333,
+            "uttId": "conv_2008_0100_009"
+        }
+    ],
+    [
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_general_0065_124.wav",
+            "text": "Okay, do you need 1 or 2 seats in the car?",
+            "mos": 2.6,
+            "uttId": "general_0065_124"
+        },
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_general_0065_124.wav",
+            "text": "Okay, do you need 1 or 2 seats in the car?",
+            "mos": 2.6,
+            "uttId": "general_0065_124"
+        }
+    ],
+    [
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_conv_2008_0095_006.wav",
+            "text": "Could you repeat the name of the restaurant?",
+            "mos": 3.5,
+            "uttId": "conv_2008_0095_006"
+        },
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_conv_2008_0095_006.wav",
+            "text": "Could you repeat the name of the restaurant?",
+            "mos": 3.5,
+            "uttId": "conv_2008_0095_006"
+        }
+    ],
+    [
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_news_2008_0040_105.wav",
+            "text": "The economy depends on large-scale, well-organised cultivation.",
+            "mos": 3.6666666666666665,
+            "uttId": "news_2008_0040_105"
+        },
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_news_2008_0040_105.wav",
+            "text": "The economy depends on large-scale, well-organised cultivation.",
+            "mos": 3.6666666666666665,
+            "uttId": "news_2008_0040_105"
+        }
+    ],
+    [
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_sus_2011_0151_030.wav",
+            "text": "The frame begged to the wide ground.",
+            "mos": 2.8461538461538463,
+            "uttId": "sus_2011_0151_030"
+        },
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_sus_2011_0151_030.wav",
+            "text": "The frame begged to the wide ground.",
+            "mos": 2.8461538461538463,
+            "uttId": "sus_2011_0151_030"
+        }
+    ],
+    [
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_news_2011_0056_164.wav",
+            "text": "It tears me apart to even think about it.",
+            "mos": 2.8461538461538463,
+            "uttId": "news_2011_0056_164"
+        },
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_news_2011_0056_164.wav",
+            "text": "It tears me apart to even think about it.",
+            "mos": 2.8461538461538463,
+            "uttId": "news_2011_0056_164"
+        }
+    ],
+    [
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_LJ010-0084_115.wav",
+            "text": "The day appointed for the murder and rising, actually arrived before the authorities interfered.",
+            "mos": 3.692307692307693,
+            "uttId": "LJ010-0084_115"
+        },
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_LJ010-0084_115.wav",
+            "text": "The day appointed for the murder and rising, actually arrived before the authorities interfered.",
+            "mos": 3.692307692307693,
+            "uttId": "LJ010-0084_115"
+        }
+    ],
+    [
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_wiki_0063_061.wav",
+            "text": "Popeye the Sailor is a cartoon fictional character created by Elzie Crisler Segar.",
+            "mos": 3.3076923076923075,
+            "uttId": "wiki_0063_061"
+        },
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_wiki_0063_061.wav",
+            "text": "Popeye the Sailor is a cartoon fictional character created by Elzie Crisler Segar.",
+            "mos": 3.3076923076923075,
+            "uttId": "wiki_0063_061"
+        }
+    ],
+    [
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_news_2010_0154_191.wav",
+            "text": "This will form a key part of the investigation.",
+            "mos": 3.3076923076923075,
+            "uttId": "news_2010_0154_191"
+        },
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_news_2010_0154_191.wav",
+            "text": "This will form a key part of the investigation.",
+            "mos": 3.3076923076923075,
+            "uttId": "news_2010_0154_191"
+        }
+    ],
+    [
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_booksent_2013_0027_143.wav",
+            "text": "Half closing her eyes and tipping back her head till it rested on the seat-back she let the savory breeze fan her eyes and ripple the fluffy curls of her bobbed hair.",
+            "mos": 2.6666666666666665,
+            "uttId": "booksent_2013_0027_143"
+        },
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_booksent_2013_0027_143.wav",
+            "text": "Half closing her eyes and tipping back her head till it rested on the seat-back she let the savory breeze fan her eyes and ripple the fluffy curls of her bobbed hair.",
+            "mos": 2.6666666666666665,
+            "uttId": "booksent_2013_0027_143"
+        }
+    ],
+    [
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_novel_2011_0023_148.wav",
+            "text": "Once I'm up I reef down.",
+            "mos": 2.333333333333333,
+            "uttId": "novel_2011_0023_148"
+        },
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_novel_2011_0023_148.wav",
+            "text": "Once I'm up I reef down.",
+            "mos": 2.333333333333333,
+            "uttId": "novel_2011_0023_148"
+        }
+    ],
+    [
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_news_2011_0068_175.wav",
+            "text": "There is local employment on a substantial fish farm there.",
+            "mos": 3.0,
+            "uttId": "news_2011_0068_175"
+        },
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_news_2011_0068_175.wav",
+            "text": "There is local employment on a substantial fish farm there.",
+            "mos": 3.0,
+            "uttId": "news_2011_0068_175"
+        }
+    ],
+    [
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_reportorial_2011_0444_066.wav",
+            "text": "Like other zeros , they pay all their interest at maturity , meaning that buyers can time things so that their bonds pay off just when Junior graduates from high school .",
+            "mos": 3.4444444444444446,
+            "uttId": "reportorial_2011_0444_066"
+        },
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_reportorial_2011_0444_066.wav",
+            "text": "Like other zeros , they pay all their interest at maturity , meaning that buyers can time things so that their bonds pay off just when Junior graduates from high school .",
+            "mos": 3.4444444444444446,
+            "uttId": "reportorial_2011_0444_066"
+        }
+    ],
+    [
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_broadcast_2010_0012_114.wav",
+            "text": "This seems to be one such time.",
+            "mos": 3.25,
+            "uttId": "broadcast_2010_0012_114"
+        },
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_broadcast_2010_0012_114.wav",
+            "text": "This seems to be one such time.",
+            "mos": 3.25,
+            "uttId": "broadcast_2010_0012_114"
+        }
+    ],
+    [
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_LJ003-0304_124.wav",
+            "text": "with the penalty of forfeiting the day's allowance of food, an increase of which the committee had recommended.",
+            "mos": 2.5,
+            "uttId": "LJ003-0304_124"
+        },
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_LJ003-0304_124.wav",
+            "text": "with the penalty of forfeiting the day's allowance of food, an increase of which the committee had recommended.",
+            "mos": 2.5,
+            "uttId": "LJ003-0304_124"
+        }
+    ],
+    [
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_news_2011_0028_192.wav",
+            "text": "I never intended to do the man any harm.",
+            "mos": 2.923076923076923,
+            "uttId": "news_2011_0028_192"
+        },
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_news_2011_0028_192.wav",
+            "text": "I never intended to do the man any harm.",
+            "mos": 2.923076923076923,
+            "uttId": "news_2011_0028_192"
+        }
+    ],
+    [
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_news_2010_0140_034.wav",
+            "text": "First class attention from professional staff in relaxed atmosphere.",
+            "mos": 2.3,
+            "uttId": "news_2010_0140_034"
+        },
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_news_2010_0140_034.wav",
+            "text": "First class attention from professional staff in relaxed atmosphere.",
+            "mos": 2.3,
+            "uttId": "news_2010_0140_034"
+        }
+    ],
+    [
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_news_2007_0009_054.wav",
+            "text": "But the wrench thrown by Golisano into the conventional wisdom has clearly increased the stakes in the west.",
+            "mos": 2.9166666666666665,
+            "uttId": "news_2007_0009_054"
+        },
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_news_2007_0009_054.wav",
+            "text": "But the wrench thrown by Golisano into the conventional wisdom has clearly increased the stakes in the west.",
+            "mos": 2.9166666666666665,
+            "uttId": "news_2007_0009_054"
+        }
+    ],
+    [
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_general_0074_144.wav",
+            "text": "Sovereignty does not entitle you to throttle your own people.",
+            "mos": 3.111111111111111,
+            "uttId": "general_0074_144"
+        },
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_general_0074_144.wav",
+            "text": "Sovereignty does not entitle you to throttle your own people.",
+            "mos": 3.111111111111111,
+            "uttId": "general_0074_144"
+        }
+    ],
+    [
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_novel_2008_0196_022.wav",
+            "text": "Thank God, he never told me to be patient.",
+            "mos": 3.8181818181818175,
+            "uttId": "novel_2008_0196_022"
+        },
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_novel_2008_0196_022.wav",
+            "text": "Thank God, he never told me to be patient.",
+            "mos": 3.8181818181818175,
+            "uttId": "novel_2008_0196_022"
+        }
+    ],
+    [
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_news_2007_0056_123.wav",
+            "text": "McGwire's homer vanished into the bullpen and caused Kamieniecki to slump his shoulders and kick the dirt.",
+            "mos": 2.5,
+            "uttId": "news_2007_0056_123"
+        },
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_news_2007_0056_123.wav",
+            "text": "McGwire's homer vanished into the bullpen and caused Kamieniecki to slump his shoulders and kick the dirt.",
+            "mos": 2.5,
+            "uttId": "news_2007_0056_123"
+        }
+    ],
+    [
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_general_0105_083.wav",
+            "text": "You might ask what Europe's role is in this internal scheming within the Member States.",
+            "mos": 2.833333333333333,
+            "uttId": "general_0105_083"
+        },
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_general_0105_083.wav",
+            "text": "You might ask what Europe's role is in this internal scheming within the Member States.",
+            "mos": 2.833333333333333,
+            "uttId": "general_0105_083"
+        }
+    ],
+    [
+        {
+            "repetitions": 2,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N2_sus_2012_0020_124.wav",
+            "text": "Waste the casual place for the neck.",
+            "mos": 2.5384615384615383,
+            "uttId": "sus_2012_0020_124"
+        },
+        {
+            "repetitions": 3,
+            "path": "/data/workspace/ppotsawee/audioLM-as-judge/data/verbosity/repeated_somos/N3_sus_2012_0020_124.wav",
+            "text": "Waste the casual place for the neck.",
+            "mos": 2.5384615384615383,
+            "uttId": "sus_2012_0020_124"
+        }
+    ]
+]
