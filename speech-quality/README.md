@@ -30,5 +30,9 @@ For example:
     python scripts/exp1_somos_gpt_multiturn.py --data data/data_somos_pairwise_diffall.json --output_path experiments/somos/ab_testing/diffall_prompt2.txt --order ab --message_format 2
     python scripts/exp1_somos_gpt_multiturn.py --data data/data_somos_pairwise_diffall.json --output_path experiments/somos/ab_testing/diffall_prompt2_BA.txt --order ba --message_format 2
     ```
+
+### annotator_agreement
+- Scripts for annotator agreement analysis
+
 ### legacy
 Old scripts and notebooks that are not used in the current experiments. These are kept for reference and may be useful for future experiments.
