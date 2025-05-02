@@ -81,7 +81,7 @@ def experiment(
 
     pipeline = KPipeline(lang_code='a') # american
 
-    with open("/data/workspace/ppotsawee/audioLM-as-judge/advanced-voice-gen-task-v1/questions1_shuffled_id.json") as f:
+    with open("/data/workspace/ppotsawee/audioLM-as-judge-new/advanced-voice-gen-task-v1/questions1_shuffled_id.json") as f:
         dataset = json.load(f)
 
     ids = [i for i in range(len(dataset))]
@@ -96,7 +96,7 @@ def experiment(
         if os.path.exists(wav_path):
             print(f"Skipping {id}")
             continue
-
+        
         question_text = x["question"]
         synthesize_speech(pipeline, question_text, wav_path)
     print("Done.")
@@ -107,7 +107,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--wav_dir", 
         type=str, 
-        default="/data/workspace/ppotsawee/audioLM-as-judge/advanced-voice-gen-task-v1/questions1_kokoro_wav",
+        default="/data/workspace/ppotsawee/audioLM-as-judge-new/advanced-voice-gen-task-v1/questions1_kokoro_wav",
         help="Path to the output file to save the synthesis results."
     )
     args = parser.parse_args()
