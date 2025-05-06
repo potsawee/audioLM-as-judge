@@ -7,7 +7,7 @@ import google.generativeai as genai
 import google
 from pydub import AudioSegment
 
-model_name = "gemini-1.5-flash"
+model_name = "gemini-2.0-flash"
 model = genai.GenerativeModel(f'models/{model_name}')
 
 system_prompt = """Please act as an impartial judge and evaluate the quality of the responses provided by two AI assistants to the user question displayed below. You should choose the assistant that follows the user's instructions and answers the user's question better. Your evaluation should consider factors such as the helpfulness, relevance, accuracy, depth, creativity, and level of detail of their responses. Begin your evaluation by comparing the two responses and provide a short explanation. Avoid any position biases and ensure that the order in which the responses were presented does not influence your decision. Do not allow the length of the responses to influence your evaluation. Do not favor certain names of the assistants. Be as objective as possible. After providing your explanation, output your final verdict by strictly following this format: \"[[A]]\" if assistant A is better, \"[[B]]\" if assistant B is better, and \"[[C]]\" for a tie (which can be equally good and equally bad). Note that the user question and the responses of the assistants will be provided to you in the audio format. You should evaluate the responses based on the user question and not on the responses of the other assistant. You should also not consider the quality of the audio or the voice of the assistants. You should only consider the content of the responses."""
@@ -59,14 +59,14 @@ def experiment(
     print("num_done = {}".format(num_done))
 
     for i in tqdm(range(num_done, len(data))):
-        question_wav_path = f"/data/workspace/ppotsawee/audioLM-as-judge/chatbot-arena/kokoroTTS/wav/{data[i]['question_id']}-user.wav"
+        question_wav_path = f"/data/workspace/ppotsawee/audioLM-as-judge-new/kokoroTTS/wav/{data[i]['question_id']}-user.wav"
 
         if order == 'ab':
-            assistant_a_wav_path = f"/data/workspace/ppotsawee/audioLM-as-judge/chatbot-arena/kokoroTTS/wav/{data[i]['question_id']}-assistant-a.wav"
-            assistant_b_wav_path = f"/data/workspace/ppotsawee/audioLM-as-judge/chatbot-arena/kokoroTTS/wav/{data[i]['question_id']}-assistant-b.wav"
+            assistant_a_wav_path = f"/data/workspace/ppotsawee/audioLM-as-judge-new/kokoroTTS/wav/{data[i]['question_id']}-assistant-a.wav"
+            assistant_b_wav_path = f"/data/workspace/ppotsawee/audioLM-as-judge-new/kokoroTTS/wav/{data[i]['question_id']}-assistant-b.wav"
         elif order == 'ba':
-            assistant_a_wav_path = f"/data/workspace/ppotsawee/audioLM-as-judge/chatbot-arena/kokoroTTS/wav/{data[i]['question_id']}-assistant-b.wav"
-            assistant_b_wav_path = f"/data/workspace/ppotsawee/audioLM-as-judge/chatbot-arena/kokoroTTS/wav/{data[i]['question_id']}-assistant-a.wav"
+            assistant_a_wav_path = f"/data/workspace/ppotsawee/audioLM-as-judge-new/kokoroTTS/wav/{data[i]['question_id']}-assistant-b.wav"
+            assistant_b_wav_path = f"/data/workspace/ppotsawee/audioLM-as-judge-new/kokoroTTS/wav/{data[i]['question_id']}-assistant-a.wav"
         else:
             raise ValueError("Invalid order")
         
@@ -113,8 +113,10 @@ def main():
     experiment(args.data_path, args.output_path, args.order)
             
     # usage: python exp1_chatbotarena_gemini_audio_audio.py --data_path chatbot-arena-spoken-1turn-english-difference-voices.json --output_path experiments/chatbot-arena-7824/audio-audio-gemini1.5flash.jsonl --order ab
-
     # usage: python exp1_chatbotarena_gemini_audio_audio.py --data_path chatbot-arena-spoken-1turn-english-difference-voices.json --output_path experiments/chatbot-arena-7824/audio-audio-gemini1.5flash_BA.jsonl --order ba
+
+    # usage: python -m scripts.exp1_chatbotarena_gemini_audio_audio --data_path data/chatbot-arena-spoken-1turn-english-difference-voices.json --output_path experiments/chatbot-arena-7824/audio-audio-gemini2.0flash.jsonl --order ab
+    # usage: python -m scripts.exp1_chatbotarena_gemini_audio_audio --data_path data/chatbot-arena-spoken-1turn-english-difference-voices.json --output_path experiments/chatbot-arena-7824/audio-audio-gemini2.0flash_BA.jsonl --order ba
 
 if __name__ == "__main__":
     main()
