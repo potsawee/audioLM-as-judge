@@ -144,10 +144,16 @@ with gr.Blocks(title="SpeakBench Audio Preference Annotator") as demo:
 
     gr.Markdown("### 📊 Progress")
     progress_df = gr.Dataframe(
-        value=progress_table_data(),
         headers=["data_ID", "count"],
         datatype=["number", "number"],
-        interactive=False
+        interactive=False,
+    )
+    # call once at *every* page-load
+    demo.load(
+        fn=progress_table_data,   # returns the up-to-date [[id, count], …]
+        inputs=None,
+        outputs=progress_df,
+        queue=False               # send instantly, no queuing needed
     )
 
     submit.click(
